@@ -9,10 +9,8 @@ Reinventing the wheel
 TODO
 
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-
+## TODOS
+- List parsing
+- Multiline questions or question tag
+- Inline md parsing (urls, imgs, etc)
+- CLI tool
