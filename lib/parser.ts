@@ -83,7 +83,5 @@ export class Parser {
 
     return { type: "EOF", val: "" }
   }
-
-
 }
 
