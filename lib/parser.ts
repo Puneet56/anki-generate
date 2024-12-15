@@ -83,5 +83,17 @@ export class Parser {
 
     return { type: "EOF", val: "" }
   }
+
+  public getStatements(): Statement[] {
+    let statements: Statement[] = []
+    while (true) {
+      let t = this.nextStatement()
+      if (t.type == "EOF") {
+        break;
+      }
+      statements.push(t)
+    }
+    return statements
+  }
 }
 

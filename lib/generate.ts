@@ -15,15 +15,7 @@ const highlightJsAssets = `
 export function generateCards(input: string): Card {
   const parser = new Parser(input)
 
-  let statements: Statement[] = []
-  while (true) {
-    let t = parser.nextStatement()
-    if (t.type == "EOF") {
-      break;
-    }
-    statements.push(t)
-  }
-
+  let statements = parser.getStatements()
   let question = statements[0].val
   statements.shift()
 
