@@ -1,0 +1,14 @@
+{
+  "name": "anki-generate",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "anki-apkg-export": "^4.0.3"
+  }
+}
